@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+.background {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(0, 238, 255);
+}
+
+.bird {
+	height: 100px;
+	width: 160px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+}
+
+.play {
+    position: fixed;
+	top: 22vh;
+	left: 40vw;
+	z-index: 100;
+}
+
+.corazon {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+	z-index: 210;
+    size: 20%;
+    height: 100px;
+	width: 100px;
+}
+
+.logo{
+    position: absolute;
+    width: 350px;
+	top: calc(90%);
+	left: calc(0% + 5px);
+	background: inherit;
+	border-radius: 2px;
+	overflow: hidden;
+	z-index: 210;
+}
+
+.brutal-box{
+	display: none;
+	z-index: 10;
+}
+
+.brutalIMG {
+	width: 100px;
+	vertical-align: bottom;
+}
+
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background-color: green;
+}
+
+.message {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 10vh;
+	font-weight: 100;
+	color: rgb(255, 255, 255);
+	top: 12vh;
+	left: 20vw;
+	text-align: center;
+}
+
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 8vh;
+	font-size: 8vh;
+	font-weight: 80;
+	color: goldenrod;
+	top: 0;
+	left: 0;
+}
+
+.score_val {
+	color: gold;
+}
+
+html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+  }
+  
+  .flipa-box {
+	display: none;
+	position: relative;
+	width: 350px;
+	height: 550px;
+	top: calc(50% - 175px);
+	left: calc(45% - 125px);
+	background: inherit;
+	border-radius: 2px;
+	overflow: hidden;
+  }
+  
+  .flipa-box:after {
+	content: '';
+	width: 300px;
+	height: 300px;
+	background: inherit; 
+	position: absolute;
+	left: -25px;
+	right: 0;
+	top: -25px;  
+	bottom: 0;
+	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+	filter: blur(10px);
+	z-index: 200;
+  }
+
+  .flipaIMG { 
+	position: relative;
+	margin-top: 50px;
+	text-align: center;
+	z-index: 210;
+	width: 100%;
+  }
